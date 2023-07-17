@@ -15,3 +15,34 @@ console.log(userName[0])
 const hobbies = ["singing","dancing","writing"]
 
 console.log(hobbies[0])
+hobbies.push("running")
+console.log(hobbies)
+const item = hobbies.findIndex((item) => {item === "singing"
+return item;
+})
+console.log (item)
+const mapping = hobbies.map(item => item + "!")
+console.log(mapping);
+const affirmations = ["You are loved ","You are beautiful ","you are amaizig "]
+const newMe =  affirmations.map (()=> ({text : "Salome"}))
+console.log(newMe)
+
+
+// function transformToObjects(numberArray) {
+//     // Todo: Add your logic
+//     // should return an array of objects
+//     return numberArray.map((item)=>{
+//         return ({val:item})
+//     })
+// }
+ 
+//  const newfunction =  transformToObjects([1,2,3]);
+//  console.log(newfunction)
+
+ function transformToObjects(numberArray) {
+    return numberArray.map((item) => ({ val: item }));
+  }
+  
+  const newfunction = transformToObjects([1, 2, 3]);
+  console.log(newfunction);
+  
