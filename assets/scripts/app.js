@@ -65,3 +65,7 @@ const {type,price} = {
     price : "20000"
 }
 console.log(type)
+
+
+
+
