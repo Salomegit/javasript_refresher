@@ -45,4 +45,23 @@ console.log(newMe)
   
   const newfunction = transformToObjects([1, 2, 3]);
   console.log(newfunction);
-  
+
+
+
+//DECOSTRUCTING OBJECTS AND ARRAYS
+const [firstName,lastName] = ["Sally", "git"]
+console.log(firstName);
+
+const {name:userNme,age} = {
+    name:"salosalo",
+    age:30
+
+}
+console.log(userNme);
+
+
+const {type,price} = {
+    type : "iphone",
+    price : "20000"
+}
+console.log(type)
