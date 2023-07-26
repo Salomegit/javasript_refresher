@@ -99,13 +99,13 @@ const newobject = {
 console.log(newobject)
  //control structure
 
- const password = prompt("Your password is ");
+//  const password = prompt("Your password is ");
 
- if (password === "Hello") {
-   console.log("Password is correct");
- } else {
-   console.log("Password is not correct");
- }
+//  if (password === "Hello") {
+//    console.log("Password is correct");
+//  } else {
+//    console.log("Password is not correct");
+//  }
 
  
  function handleTimeout()
@@ -117,8 +117,14 @@ console.log(newobject)
     console.log("Timed out Again");
  }
 
- setTimeout(handleTimeout);
+ setTimeout(handleTimeout , 2000);
+ setTimeout(handleTimeout1 , 2000);
+ setTimeout(
+    ()=>{
+        console.log("Timed out the last time")
+    },6000
+ )
 
  // The method above allows passing the function as a value without the parenthesis.This allows fuction 
  //setTimeout to access the already defined handleTimeout.Otherwise if hanleTimeout had parenthesis , then it 
- //would not be passed as a value,it would be passed as a return value.Not to execue the 
+ //would not be passed as a value,it would be passed as a return value.Not to execue the handleTimeout right away
