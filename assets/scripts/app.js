@@ -66,6 +66,59 @@ const {type,price} = {
 }
 console.log(type)
 
+const newfunctiono = () => {
+    const object = {
+  name:"Sally",
+  age:"20"
+}
+return object.name;
+}
 
+const newuser = newfunctiono();
+console.log(newuser);
 
+function moving(verb ){
+    const object ={
+        name :"sall"
+    }
+    return object.name
+    return "sally likes moving" + verb ;
+}
+const move = moving()
+console.log(move)
+//spread operation
 
+const object ={
+    name:"objectq"
+}
+const newobject = {
+    name1:"object2",
+    size:10,
+    ...object
+}
+console.log(newobject)
+ //control structure
+
+ const password = prompt("Your password is ");
+
+ if (password === "Hello") {
+   console.log("Password is correct");
+ } else {
+   console.log("Password is not correct");
+ }
+
+ 
+ function handleTimeout()
+ {
+    console.log("Timed out")
+ }
+
+ const handleTimeout1 = ()=> {
+    console.log("Timed out Again");
+ }
+
+ setTimeout(handleTimeout);
+
+ // The method above allows passing the function as a value without the parenthesis.This allows fuction 
+ //setTimeout to access the already defined handleTimeout.Otherwise if hanleTimeout had parenthesis , then it 
+ //would not be passed as a value,it would be passed as a return value.Not to execue the 
